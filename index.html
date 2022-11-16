@@ -191,6 +191,20 @@
 					#faq-gallery {
 						grid-template-columns: auto auto auto;
 					}
+					@media screen and (max-width: 480px) {
+						.grid {
+							grid-template-columns: 100%;
+							grid-gap: 16px;
+						}
+						.gallery {
+							grid-gap: 16px;
+							margin-top: 16px;
+							margin-bottom: 16px;
+						}
+						#main-gallery {
+							grid-template-columns: 100%;
+						}
+					}
 				</style>
 			</div>
 		</div>

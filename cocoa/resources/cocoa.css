@@ -7,30 +7,33 @@ Links: #FFB7C5
 
 @font-face {
 	font-family: "Quattrocento_Regular";
-	src: url("../../Quattrocento_Regular.ttf");
+	src: url("../../resources/Quattrocento_Regular.ttf");
 }
 
 @font-face {
 	font-family: "Quattrocento_Bold";
-	src: url("../../Quattrocento_Bold.ttf");
+	src: url("../../resources/Quattrocento_Bold.ttf");
 }
 
 body {
 	color: #FFB7C5;
 	font-family: "Quattrocento_Regular", serif;
 	font-size: 16px;
+	margin: 0px;
+	padding: 0px;
 }
 
 h1 {
 	color: #FFB7C5;
-	line-height: 5;
 	text-align: center;
 	font-family: "Quattrocento_Bold", serif;
 	font-weight: bold;
 	background-image: url("title_background_cocoa.png");
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: auto 150px;
 	background-position-x: center;
+	height: 75px;
+	padding-top: calc(75px - 0.5em);
 }
 
 h2,h3,h4,h5 {
@@ -41,6 +44,10 @@ h2,h3,h4,h5 {
 
 a {
 	color: #FFB7C5;
+}
+
+ul {
+	padding: 0px;
 }
 
 li {
@@ -138,12 +145,55 @@ img:not(.transparent) {
 	padding-left: 32px;
 }
 
-.spoiler {
-	background-color: #000000;
-	color: #000000;
+@media (hover: hover) {
+	.spoiler {
+		background-color: #000000;
+		color: #000000;
+	}
+
+	.spoiler:hover {
+		background-color: inherit;
+		color: inherit;
+	}
 }
 
-.spoiler:hover {
-	background-color: inherit;
-	color: inherit;
+@media screen and (max-width: 480px) {
+	img:not(.transparent) {
+		border-image-width: 20px;
+		border-image-outset: 10px;
+	}
+
+	#wrapper::before,#wrapper::after {
+		content: "";
+		background-image: none;
+		width: 12%;
+		max-width: 160px;
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		z-index: 0;
+	}
+
+	#wrapper-inner {
+		border-image-slice: 30%;
+		border-image-width: 20px;
+		border-image-outset: 10px;
+		margin: 0px;
+		padding: 16px;
+	}
+
+	#navigation-links > li {
+		display: block;
+		text-align: center;
+	}
+
+	.separator {
+		height: 20px;
+	}
+
+	.separator-list {
+		background-size: auto 100%;
+		background-position-x: center;
+		width: 100%;
+	}
 }

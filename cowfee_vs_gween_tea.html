@@ -39,10 +39,11 @@
 					<div></div>
 					<img src="images/gween_tea_2.jpg">
 					<img src="images/cowfee_3.png">
-					<img src="images/yellow_pee.png">
+					<img id="yellow_pee" src="images/yellow_pee.png">
 					<img src="images/gween_tea_3.png">
 				</div>
-				<p>Sxarop just wants to go <a href="index.html">home</a>. Maybe she prefers water.</p>
+				<p>Sxarop just wants to go <a href="index.html">home</a>.</p>
+				<p>Maybe she prefers water.</p>
 				<audio controls autoplay>
 					<source src="audio/cowfee_vs_gween_tea.mp3">
 				</audio>
@@ -59,6 +60,18 @@
 						justify-items: center;
 						margin-top: 32px;
 						margin-bottom: 32px;
+					}
+					@media screen and (max-width: 480px) {
+						#yellow_pee {
+							border: none;
+							border-image: none;
+						}
+						.gallery {
+							grid-template-columns: auto 0px auto;
+							grid-gap: 16px;
+							margin-top: 16px;
+							margin-bottom: 16px;
+						}
 					}
 				</style>
 			</div>
