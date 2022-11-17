@@ -9,72 +9,57 @@
 		<script>null</script>
 	</head>
 	<body>
-		<div id="wrapper">
-			<div id="wrapper-inner">
-				<ul id="navigation-links">
-					<li><a href="index.html" title="Sxarp lost home">Home</a></li>
-					<li class="separator-list"></li>
-					<li><a href="cocoa/cocoa.html" title="Cocoa's shrine">Cocoa</a></li>
-					<li><a href="chino/chino.html" title="Chino's shrine">Chino</a></li>
-					<li class="separator-list"></li>
-					<li><a href="https://kokowa.neocities.org/index.html" title="Kokowa's Neocities website mirror">NC Mirror</a></li>
-					<li><a href="https://kokowadokooo.github.io/kokowa/index.html" title="Kokowa's GitHub Pages website mirror">GH Mirror</a></li>
-					<li class="separator-list"></li>
-					<li><a href="https://github.com/kokowadokooo/kokowa" title="Kokowa's website repository">Repository</a></li>
-					<li><a href="https://github.com/kokowadokooo/kokowa/issues" title="Kokowa's website repository">Comments</a></li>
-				</ul>
-				<div class="separator"></div>
-				<h1>Cowfee, gween tea</h1>
-				<div class="gallery">
-					<div><p>Aido riku somu moa cowfee.</p></div>
-					<div></div>
-					<div><p>Aido riku somu moa gween tea.</p></div>
-					<img src="images/cowfee_1.png">
-					<div></div>
-					<img src="images/gween_tea_1.png">
-					<div><p>COWFEE.</p></div>
-					<div></div>
-					<div><p>GWEEN TEA.</p></div>
-					<img src="images/cowfee_2.jpg">
-					<div></div>
-					<img src="images/gween_tea_2.jpg">
-					<img src="images/cowfee_3.png">
-					<img id="yellow_pee" src="images/yellow_pee.png">
-					<img src="images/gween_tea_3.png">
-				</div>
-				<p>Sxarop just wants to go <a href="index.html">home</a>.</p>
-				<p>Maybe she prefers water.</p>
-				<audio controls autoplay>
-					<source src="audio/cowfee_vs_gween_tea.mp3">
-				</audio>
-				<style>
-					img {
-						max-width: 100%;
-						max-height: 480px;
-					}
-					.gallery {
-						display: grid;
-						grid-template-columns: auto auto auto;
-						grid-gap: 32px;
-						align-items: center;
-						justify-items: center;
-						margin-top: 32px;
-						margin-bottom: 32px;
-					}
-					@media screen and (max-width: 480px) {
-						#yellow_pee {
-							border: none;
-							border-image: none;
-						}
-						.gallery {
-							grid-template-columns: auto 0px auto;
-							grid-gap: 16px;
-							margin-top: 16px;
-							margin-bottom: 16px;
-						}
-					}
-				</style>
-			</div>
+		<ul id="navigation-links">
+			<li><a href="index.html" title="Sxarp lost home">Home</a></li>
+			<li class="separator-list"></li>
+			<li><a href="cocoa/cocoa.html" title="Cocoa's shrine">Cocoa</a> <a href="chino/chino.html" title="Chino's shrine">Chino</a></li>
+			<li class="separator-list"></li>
+			<li><a href="https://kokowa.neocities.org/index.html" title="Kokowa's Neocities website mirror">NC Mirror</a> <a href="https://kokowadokooo.github.io/kokowa/index.html" title="Kokowa's GitHub Pages website mirror">GH Mirror</a></li>
+			<li class="separator-list"></li>
+			<li><a href="https://github.com/kokowadokooo/kokowa" title="Kokowa's website repository">Repository</a> <a href="https://github.com/kokowadokooo/kokowa/issues" title="Kokowa's website repository">Comments</a></li>
+		</ul>
+		<div class="separator"></div>
+		<h1>Cowfee, gween tea</h1>
+		<div class="gallery">
+			<div><p>Aido riku somu moa cowfee.</p></div>
+			<div></div>
+			<div><p>Aido riku somu moa gween tea.</p></div>
+			<img src="images/cowfee_1.png">
+			<div></div>
+			<img src="images/gween_tea_1.png">
+			<div><p>COWFEE.</p></div>
+			<div></div>
+			<div><p>GWEEN TEA.</p></div>
+			<img src="images/cowfee_2.jpg">
+			<div></div>
+			<img src="images/gween_tea_2.jpg">
+			<img src="images/cowfee_3.png">
+			<img id="yellow_pee" src="images/yellow_pee.png">
+			<img src="images/gween_tea_3.png">
 		</div>
+		<p>Sxarop just wants to go <a href="index.html">home</a>.</p>
+		<p>Maybe she prefers water.</p>
+		<audio controls autoplay>
+			<source src="audio/cowfee_vs_gween_tea.mp3">
+		</audio>
+		<style>
+			img {
+				display: block;
+				max-width: 100%;
+				max-height: 480px;
+			}
+			.gallery {
+				grid-template-columns: auto auto auto;
+			}
+			@media only screen and (min-width: 501px) and (max-width: 1000px), only screen and (max-width: 500px) {
+				#yellow_pee {
+					border: none;
+					border-image: none;
+				}
+				.gallery {
+					grid-template-columns: auto 0px auto;
+				}
+			}
+		</style>
 	</body>
 </html>

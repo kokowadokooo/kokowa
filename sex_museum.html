@@ -9,64 +9,54 @@
 		<script>null</script>
 	</head>
 	<body>
-		<div id="wrapper">
-			<div id="wrapper-inner">
-				<ul id="navigation-links">
-					<li><a href="index.html" title="Sxarp lost home">Home</a></li>
-					<li class="separator-list"></li>
-					<li><a href="cocoa/cocoa.html" title="Cocoa's shrine">Cocoa</a></li>
-					<li><a href="chino/chino.html" title="Chino's shrine">Chino</a></li>
-					<li class="separator-list"></li>
-					<li><a href="https://kokowa.neocities.org/index.html" title="Kokowa's Neocities website mirror">NC Mirror</a></li>
-					<li><a href="https://kokowadokooo.github.io/kokowa/index.html" title="Kokowa's GitHub Pages website mirror">GH Mirror</a></li>
-					<li class="separator-list"></li>
-					<li><a href="https://github.com/kokowadokooo/kokowa" title="Kokowa's website repository">Repository</a></li>
-					<li><a href="https://github.com/kokowadokooo/kokowa/issues" title="Kokowa's website repository">Comments</a></li>
-				</ul>
-				<div class="separator"></div>
-				<h1>Sex museum</h1>
-				<p>Welcome to the sex museum, curated by Hoto Cocoa.</p>
-				<div class="gallery">
-					<img src="images/sex_museum_1.png">
-					<img src="images/sex_museum_2.png">
-					<img src="images/sex_museum_3.gif">
-					<img src="images/sex_museum_4.jpg">
-					<img src="images/sex_museum_5.jpg">
-					<img src="images/sex_museum_6.jpg">
-					<img src="images/sex_museum_7.jpg">
-					<img src="images/sex_museum_8.png">
-					<img src="images/sex_museum_9.png">
-					<img src="images/sex_museum_10.jpg">
-					<img src="images/sex_museum_11.jpg">
-					<img src="images/sex_museum_12.jpg">
-					<img src="images/sex_museum_13.png">
-					<img src="images/sex_museum_14.jpg">
-					<img src="images/sex_museum_15.jpg">
-				</div>
-				<style>
-					img {
-						max-width: 100%;
-						max-height: 480px;
-					}
-					.gallery {
-						display: grid;
-						grid-template-columns: auto auto auto;
-						grid-gap: 32px;
-						align-items: center;
-						justify-items: center;
-						margin-top: 32px;
-						margin-bottom: 32px;
-					}
-					@media screen and (max-width: 480px) {
-						.gallery {
-							grid-template-columns: 100%;
-							grid-gap: 16px;
-							margin-top: 16px;
-							margin-bottom: 16px;
-						}
-					}
-				</style>
-			</div>
+		<ul id="navigation-links">
+			<li><a href="index.html" title="Sxarp lost home">Home</a></li>
+			<li class="separator-list"></li>
+			<li><a href="cocoa/cocoa.html" title="Cocoa's shrine">Cocoa</a> <a href="chino/chino.html" title="Chino's shrine">Chino</a></li>
+			<li class="separator-list"></li>
+			<li><a href="https://kokowa.neocities.org/index.html" title="Kokowa's Neocities website mirror">NC Mirror</a> <a href="https://kokowadokooo.github.io/kokowa/index.html" title="Kokowa's GitHub Pages website mirror">GH Mirror</a></li>
+			<li class="separator-list"></li>
+			<li><a href="https://github.com/kokowadokooo/kokowa" title="Kokowa's website repository">Repository</a> <a href="https://github.com/kokowadokooo/kokowa/issues" title="Kokowa's website repository">Comments</a></li>
+		</ul>
+		<div class="separator"></div>
+		<h1>Sex museum</h1>
+		<p>Welcome to the sex museum, curated by Hoto Cocoa.</p>
+		<div class="gallery">
+			<img src="images/sex_museum_1.png">
+			<img src="images/sex_museum_2.png">
+			<img src="images/sex_museum_3.gif">
+			<img src="images/sex_museum_4.jpg">
+			<img src="images/sex_museum_5.jpg">
+			<img src="images/sex_museum_6.jpg">
+			<img src="images/sex_museum_7.jpg">
+			<img src="images/sex_museum_8.png">
+			<img src="images/sex_museum_9.png">
+			<img src="images/sex_museum_10.jpg">
+			<img src="images/sex_museum_11.jpg">
+			<img src="images/sex_museum_12.jpg">
+			<img src="images/sex_museum_13.png">
+			<img src="images/sex_museum_14.jpg">
+			<img src="images/sex_museum_15.jpg">
 		</div>
+		<style>
+			img {
+				display: block;
+				max-width: 100%;
+				max-height: 480px;
+			}
+			.gallery {
+				grid-template-columns: auto auto auto;
+			}
+			@media only screen and (min-width: 501px) and (max-width: 1000px) {
+				.gallery {
+					grid-template-columns: auto auto;
+				}
+			}
+			@media only screen and (max-width: 500px) {
+				.gallery {
+					grid-template-columns: 100%;
+				}
+			}
+		</style>
 	</body>
 </html>

@@ -9,51 +9,45 @@
 		<script>null</script>
 	</head>
 	<body>
-		<div id="wrapper">
-			<div id="wrapper-inner">
-				<ul id="navigation-links">
-					<li><a href="index.html" title="Sxarp lost home">Home</a></li>
-					<li class="separator-list"></li>
-					<li><a href="cocoa/cocoa.html" title="Cocoa's shrine">Cocoa</a></li>
-					<li><a href="chino/chino.html" title="Chino's shrine">Chino</a></li>
-					<li class="separator-list"></li>
-					<li><a href="https://kokowa.neocities.org/index.html" title="Kokowa's Neocities website mirror">NC Mirror</a></li>
-					<li><a href="https://kokowadokooo.github.io/kokowa/index.html" title="Kokowa's GitHub Pages website mirror">GH Mirror</a></li>
-					<li class="separator-list"></li>
-					<li><a href="https://github.com/kokowadokooo/kokowa" title="Kokowa's website repository">Repository</a></li>
-					<li><a href="https://github.com/kokowadokooo/kokowa/issues" title="Kokowa's website repository">Comments</a></li>
-				</ul>
-				<div class="separator"></div>
-				<h1>Gasoween</h1>
-				<p>Please remember to refuel the girls from Gochiusa everyday so that they remain happy and healthy.</p>
-				<p>Use only high octane gasoween.</p>
-				<div class="gallery">
-					<img src="images/gasoween_1.jpg">
-					<img src="images/gasoween_2.png">
-				</div>
-				<style>
-					img {
-						max-width: 100%;
-						max-height: 480px;
-					}
-					.gallery {
-						display: grid;
-						grid-template-columns: auto auto;
-						grid-gap: 32px;
-						align-items: center;
-						justify-items: center;
-						margin-top: 32px;
-						margin-bottom: 32px;
-					}
-					@media screen and (max-width: 480px) {
-						.gallery {
-							grid-gap: 16px;
-							margin-top: 16px;
-							margin-bottom: 16px;
-						}
-					}
-				</style>
-			</div>
+		<ul id="navigation-links">
+			<li><a href="index.html" title="Sxarp lost home">Home</a></li>
+			<li class="separator-list"></li>
+			<li><a href="cocoa/cocoa.html" title="Cocoa's shrine">Cocoa</a> <a href="chino/chino.html" title="Chino's shrine">Chino</a></li>
+			<li class="separator-list"></li>
+			<li><a href="https://kokowa.neocities.org/index.html" title="Kokowa's Neocities website mirror">NC Mirror</a> <a href="https://kokowadokooo.github.io/kokowa/index.html" title="Kokowa's GitHub Pages website mirror">GH Mirror</a></li>
+			<li class="separator-list"></li>
+			<li><a href="https://github.com/kokowadokooo/kokowa" title="Kokowa's website repository">Repository</a> <a href="https://github.com/kokowadokooo/kokowa/issues" title="Kokowa's website repository">Comments</a></li>
+		</ul>
+		<div class="separator"></div>
+		<h1>Gasoween</h1>
+		<p>Please remember to refuel the girls from Gochiusa everyday so that they remain happy and healthy.</p>
+		<p>Use only high octane gasoween.</p>
+		<div class="gallery">
+			<img src="images/gasoween_1.jpg">
+			<img src="images/gasoween_2.png">
 		</div>
+		<style>
+			img {
+				display: block;
+				max-width: 100%;
+				max-height: 480px;
+			}
+			.gallery {
+				grid-template-columns: auto auto;
+			}
+			@media only screen and (min-width: 501px) and (max-width: 1000px) {
+				.gallery {
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: center;
+					align-items: center;
+				}
+			}
+			@media only screen and (max-width: 500px) {
+				.gallery {
+					grid-template-columns: 100%;
+				}
+			}
+		</style>
 	</body>
 </html>

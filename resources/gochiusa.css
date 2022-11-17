@@ -15,28 +15,36 @@ Links: #8080FF
 	src: url("Quattrocento_Bold.ttf");
 }
 
+html {
+	height: 100%;
+}
+
 body {
 	color: #755431;
 	font-family: "Quattrocento_Regular", serif;
 	font-size: 16px;
+	background-color: #FFF9F2;
+	border-color: #D29757;
+	border-style: solid;
+	border-width: 2px;
+	border-image-source: url("border_gochiusa.png");
+	border-image-repeat: round;
+	border-image-slice: 30%;
+	border-image-width: 26px;
+	border-image-outset: 13px;
+	min-height: 100%;
 	margin: 0px;
-	padding: 0px;
+	padding-top: 32px;
+	padding-bottom: 32px;
+	padding-left: 15%;
+	padding-right: 15%;
 }
 
 h1 {
-	color: #755431;
 	text-align: center;
-	font-family: "Quattrocento_Bold", serif;
-	font-weight: bold;
-	background-image: url("title_background_gochiusa.png");
-	background-repeat: no-repeat;
-	background-size: auto 150px;
-	background-position-x: center;
-	height: 75px;
-	padding-top: calc(75px - 0.5em);
 }
 
-h2,h3,h4,h5 {
+h1, h2,h3,h4,h5 {
 	color: #755431;
 	font-family: "Quattrocento_Bold", serif;
 	font-weight: bold;
@@ -47,6 +55,7 @@ a {
 }
 
 ul {
+	margin-top: 0px;
 	padding: 0px;
 }
 
@@ -66,55 +75,7 @@ img:not(.transparent) {
 	border-image-outset: 13px;
 }
 
-#wrapper::before,#wrapper::after {
-	content: "";
-	background-image: url("background_side_gochiusa.png");
-	background-repeat: auto;
-	background-size: 100%;
-	background-position-x: center;
-	background-position-y: top;
-	width: 12%;
-	max-width: 160px;
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	z-index: 0;
-}
-
-#wrapper::before {
-	left: 0;
-	transform: scaleX(-1);
-}
-
-#wrapper::after {
-	right: 0;
-}
-
-#wrapper-inner {
-	background-color: #FFF9F2;
-	border-color: #D29757;
-	border-style: solid;
-	border-width: 2px;
-	border-image-source: url("border_gochiusa.png");
-	border-image-repeat: round;
-	border-image-slice: 30%;
-	border-image-width: 26px;
-	border-image-outset: 13px;
-	position: relative;
-	margin-top: 32px;
-	margin-bottom: 32px;
-	margin-left: 12%;
-	margin-right: 12%;
-	padding: 32px;
-}
-
-#navigation-links {
-	list-style-type: none;
-	margin-top: 0px;
-	padding-left: 0px;
-}
-
-#navigation-links > li {
+#navigation-links li {
 	font-family: "Quattrocento_Bold", serif;
 	font-weight: bold;
 	display: inline;
@@ -138,6 +99,20 @@ img:not(.transparent) {
 	vertical-align: middle;
 }
 
+.grid {
+	display: grid;
+	grid-gap: 32px;
+}
+
+.gallery {
+	display: grid;
+	grid-gap: 32px;
+	align-items: center;
+	justify-items: center;
+	margin-top: 32px;
+	margin-bottom: 32px;
+}
+
 .unordered-list {
 	background-image: url("list_gochiusa.png");
 	background-repeat: no-repeat;
@@ -157,32 +132,20 @@ img:not(.transparent) {
 	}
 }
 
-@media screen and (max-width: 480px) {
+@media only screen and (min-width: 501px) and (max-width: 1000px) {
+	body {
+		border-image-width: 20px;
+		border-image-outset: 10px;
+		padding-left: 24px;
+		padding-right: 24px;
+	}
+
 	img:not(.transparent) {
 		border-image-width: 20px;
 		border-image-outset: 10px;
 	}
 
-	#wrapper::before,#wrapper::after {
-		content: "";
-		background-image: none;
-		width: 12%;
-		max-width: 160px;
-		position: fixed;
-		top: 0;
-		bottom: 0;
-		z-index: 0;
-	}
-
-	#wrapper-inner {
-		border-image-slice: 30%;
-		border-image-width: 20px;
-		border-image-outset: 10px;
-		margin: 0px;
-		padding: 16px;
-	}
-
-	#navigation-links > li {
+	#navigation-links li {
 		display: block;
 		text-align: center;
 	}
@@ -195,5 +158,54 @@ img:not(.transparent) {
 		background-size: auto 100%;
 		background-position-x: center;
 		width: 100%;
+	}
+
+	.grid {
+		grid-gap: 24px;
+	}
+
+	.gallery {
+		grid-gap: 24px;
+		margin-top: 24px;
+		margin-bottom: 24px;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	body {
+		border-image-width: 16px;
+		border-image-outset: 8px;
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+
+	img:not(.transparent) {
+		border-image-width: 16px;
+		border-image-outset: 8px;
+	}
+
+	#navigation-links li {
+		display: block;
+		text-align: center;
+	}
+
+	.separator {
+		height: 16px;
+	}
+
+	.separator-list {
+		background-size: auto 100%;
+		background-position-x: center;
+		width: 100%;
+	}
+
+	.grid {
+		grid-gap: 16px;
+	}
+
+	.gallery {
+		grid-gap: 16px;
+		margin-top: 16px;
+		margin-bottom: 16px;
 	}
 }

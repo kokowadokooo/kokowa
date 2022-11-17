@@ -9,63 +9,48 @@
 		<script>null</script>
 	</head>
 	<body>
-		<div id="wrapper">
-			<div id="wrapper-inner">
-				<ul id="navigation-links">
-					<li><a href="index.html" title="Sxarp lost home">Home</a></li>
-					<li class="separator-list"></li>
-					<li><a href="cocoa/cocoa.html" title="Cocoa's shrine">Cocoa</a></li>
-					<li><a href="chino/chino.html" title="Chino's shrine">Chino</a></li>
-					<li class="separator-list"></li>
-					<li><a href="https://kokowa.neocities.org/index.html" title="Kokowa's Neocities website mirror">NC Mirror</a></li>
-					<li><a href="https://kokowadokooo.github.io/kokowa/index.html" title="Kokowa's GitHub Pages website mirror">GH Mirror</a></li>
-					<li class="separator-list"></li>
-					<li><a href="https://github.com/kokowadokooo/kokowa" title="Kokowa's website repository">Repository</a></li>
-					<li><a href="https://github.com/kokowadokooo/kokowa/issues" title="Kokowa's website repository">Comments</a></li>
-				</ul>
-				<div class="separator"></div>
-				<h1>Morinaga Cocoa Day collab</h1>
-				<p>The 6th(or 7th?) of november has been declared Cocoa Day by Japanese company Morinaga.</p>
-				<p>Just another consumeristic event or a great occasion to appreciate the best girl?</p>
-				<p>Probably both, well as for me they can have my money and I wish it was Cocoa day everyday.</p>
-				<div class="gallery">
-					<img src="images/cocoa_day_collab_1.jpg">
-					<img src="images/cocoa_day_collab_2.jpg">
-					<img src="images/cocoa_day_collab_3.jpg">
-				</div>
-				<p>Here's some of the special audios that were released for the event(s):</p>
-				<p>2021:</p>
-				<audio controls>
-					<source src="audio/cocoa_day_2021.mp3">
-				</audio>
-				<p>2022:</p>
-				<audio controls>
-					<source src="audio/cocoa_day_2022.mp3">
-				</audio>
-				<style>
-					img {
-						max-width: 100%;
-						max-height: 720px;
-					}
-					.gallery {
-						display: grid;
-						grid-template-columns: auto auto auto;
-						grid-gap: 32px;
-						align-items: center;
-						justify-items: center;
-						margin-top: 32px;
-						margin-bottom: 32px;
-					}
-					@media screen and (max-width: 480px) {
-						.gallery {
-							grid-template-columns: 100%;
-							grid-gap: 16px;
-							margin-top: 16px;
-							margin-bottom: 16px;
-						}
-					}
-				</style>
-			</div>
+		<ul id="navigation-links">
+			<li><a href="index.html" title="Sxarp lost home">Home</a></li>
+			<li class="separator-list"></li>
+			<li><a href="cocoa/cocoa.html" title="Cocoa's shrine">Cocoa</a> <a href="chino/chino.html" title="Chino's shrine">Chino</a></li>
+			<li class="separator-list"></li>
+			<li><a href="https://kokowa.neocities.org/index.html" title="Kokowa's Neocities website mirror">NC Mirror</a> <a href="https://kokowadokooo.github.io/kokowa/index.html" title="Kokowa's GitHub Pages website mirror">GH Mirror</a></li>
+			<li class="separator-list"></li>
+			<li><a href="https://github.com/kokowadokooo/kokowa" title="Kokowa's website repository">Repository</a> <a href="https://github.com/kokowadokooo/kokowa/issues" title="Kokowa's website repository">Comments</a></li>
+		</ul>
+		<div class="separator"></div>
+		<h1>Morinaga Cocoa Day collab</h1>
+		<p>The 6th(or 7th?) of november has been declared Cocoa Day by Japanese company Morinaga.</p>
+		<p>Just another consumeristic event or a great occasion to appreciate the best girl?</p>
+		<p>Probably both, well as for me they can have my money and I wish it was Cocoa day everyday.</p>
+		<div class="gallery">
+			<img src="images/cocoa_day_collab_1.jpg">
+			<img src="images/cocoa_day_collab_2.jpg">
+			<img src="images/cocoa_day_collab_3.jpg">
 		</div>
+		<p>Here's some of the special audios that were released for the event(s):</p>
+		<p>2021:</p>
+		<audio controls>
+			<source src="audio/cocoa_day_2021.mp3">
+		</audio>
+		<p>2022:</p>
+		<audio controls>
+			<source src="audio/cocoa_day_2022.mp3">
+		</audio>
+		<style>
+			img {
+				display: block;
+				max-width: 100%;
+				max-height: 720px;
+			}
+			.gallery {
+				grid-template-columns: auto auto auto;
+			}
+			@media only screen and (min-width: 501px) and (max-width: 1000px), only screen and (max-width: 500px) {
+				.gallery {
+					grid-template-columns: 100%;
+				}
+			}
+		</style>
 	</body>
 </html>
