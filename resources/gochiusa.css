@@ -75,6 +75,18 @@ img:not(.transparent) {
 	border-image-outset: 13px;
 }
 
+video:not(.transparent) {
+	background-color: #FFFFFF;
+	border-color: #D29757;
+	border-style: solid;
+	border-width: 2px;
+	border-image-source: url("border_gochiusa.png");
+	border-image-repeat: round;
+	border-image-slice: 30%;
+	border-image-width: 26px;
+	border-image-outset: 13px;
+}
+
 #navigation-links li {
 	font-family: "Quattrocento_Bold", serif;
 	font-weight: bold;
